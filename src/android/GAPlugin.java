@@ -12,7 +12,7 @@ public class GAPlugin extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callback) {
 		GoogleAnalytics ga = GoogleAnalytics.getInstance(cordova.getActivity());
-		Tracker tracker=ga.newTracker("UA-51483338-1");
+		Tracker tracker=ga.newTracker("UA-51483338-5");
 		if (action.equals("initGA")) {
 			try {
 				tracker = ga.newTracker(args.getString(0));
